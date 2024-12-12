@@ -78,6 +78,16 @@ android {
     compileSdk rootProject.ext.compileSdkVersion
 
     namespace "com.subscriptionmanagerapp"
+
+    buildFeatures {
+        prefab true
+    }
+    
+    // 다음 설정 추가
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    
     defaultConfig {
         applicationId "com.subscriptionmanagerapp"
         minSdkVersion rootProject.ext.minSdkVersion
